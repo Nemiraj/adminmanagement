@@ -1,0 +1,167 @@
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 4px;
+}
+
+.stat-sub {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .info-row { grid-template-columns: 1fr; }
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.info-icon {
+  font-size: 32px;
+  width: 56px;
+  height: 56px;
+  background: var(--primary-dim);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.info-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.info-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.chart-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-dim);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.activity-info {
+  flex: 1;
+}
+
+.activity-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-main);
+}
+
+.activity-site {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.activity-right {
+  text-align: right;
+}
+
+.activity-time {
+  font-size: 11px;
+  color: var(--text-light);
+  margin-top: 4px;
+}
