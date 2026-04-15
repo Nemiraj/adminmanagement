@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 
-const API_BASE = process.env.REACT_APP_API_URL || '/api';
+const API_BASE = process.env.REACT_APP_API_URL || 'https://adminmanagementbackend.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE,
