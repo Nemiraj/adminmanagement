@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
 import './Login.css';
@@ -20,7 +20,7 @@ export default function Login() {
             <div className="login-title">NammaRaksham</div>
           </div>
           <div className="login-card">
-            <div className="login-section-label">// Already Authenticated</div>
+            <div className="login-section-label">{'// Already Authenticated'}</div>
             <p style={{ margin: '20px 0', color: 'var(--text-secondary)' }}>
               Logged in as <strong>{user.name}</strong> ({user.role})
             </p>
@@ -81,7 +81,7 @@ export default function Login() {
         </div>
 
         <div className="login-card">
-          <div className="login-section-label">// Authentication Required</div>
+          <div className="login-section-label">{'// Authentication Required'}</div>
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
